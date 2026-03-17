@@ -3,7 +3,11 @@ function Header() {
     <header className="header">
       <div className="header__content">
         <div className="header__brand">
-          <img className="header__logo" src="/logo.png" alt="Logo Equimape" />
+          <img
+            className="header__logo"
+            src={`${import.meta.env.BASE_URL}logo.png`}
+            alt="Logo Equimape"
+          />
 
           <div>
             <h1 className="header__title">Equimape Promoções</h1>

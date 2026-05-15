@@ -1,33 +1,93 @@
 import { useState } from "react";
 import "./App.css";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Catalogo from "./components/Catalogo";
+import Header from "./components/Header.jsx";
+import Hero from "./components/Hero.jsx";
+import Catalogo from "./components/Catalogo.jsx";
 import Resumo from "./components/Resumo.jsx";
 
-const whatsappNumber = "5500000000000";
+const whatsappNumber = "5567999757771";
+
 
 const produtos = [
   {
-    id: 1,
-    nome: "Mesa Compacta de Estudo",
-    preco: 299.9,
-    descricao: "Ideal para quartos e espaços pequenos",
-    imagem: "https://via.placeholder.com/300x220",
+    id: 9533,
+    nome: "Gaveteiro Móvel com Rodinha e Chave",
+    precoAntes: 0.0,
+    preco: 571.0,
+    desconto: 0,
+    disponivel: true,
+    descricao: "Gaveteiro com 3 gavetas, rodinhas para fácil movimentação e chave para mais segurança. Ideal para manter materiais e objetos do dia a dia sempre organizados no seu espaço de estudos.",
+    imagem: `${import.meta.env.BASE_URL}fotos/9533.png`,
   },
   {
-    id: 2,
-    nome: "Cadeira de Estudo",
-    preco: 199.9,
-    descricao: "Conforto para rotina de estudos",
-    imagem: "https://via.placeholder.com/300x220",
+    id: 9531,
+    nome: "Gaveteiro Móvel com Rodinha e Chave",
+    precoAntes: 0.0,
+    preco: 571.0,
+    desconto: 0,
+    disponivel: true,
+    descricao: "Gaveteiro com 3 gavetas, rodinhas para fácil movimentação e chave para mais segurança. Ideal para manter materiais e objetos do dia a dia sempre organizados no seu espaço de estudos.",
+    imagem: `${import.meta.env.BASE_URL}fotos/9531.png`,
   },
   {
-    id: 3,
-    nome: "Gaveteiro Organizador",
-    preco: 149.9,
-    descricao: "Mais organização no dia a dia",
-    imagem: "https://via.placeholder.com/300x220",
+    id: 9532,
+    nome: "Gaveteiro Móvel com Rodinha e Chave",
+    precoAntes: 0.0,
+    preco: 571.0,
+    desconto: 0,
+    disponivel: true,
+    descricao: "Gaveteiro com 3 gavetas, rodinhas para fácil movimentação e chave para mais segurança. Ideal para manter materiais e objetos do dia a dia sempre organizados no seu espaço de estudos.",
+    imagem: `${import.meta.env.BASE_URL}fotos/9532.png`,
+  },
+  {
+    id: 9519,
+    nome: "Mesa",
+    precoAntes: 0.0,
+    preco: 569.0,
+    desconto: 0,
+    disponivel: true,
+    descricao: "Mesa prática e funcional, ideal para estudos, home office e rotina do dia a dia. Um espaço confortável para manter foco, organização e produtividade.",
+    imagem: `${import.meta.env.BASE_URL}fotos/9519.png`,
+  },
+  {
+    id: 9524,
+    nome: "Mesa",
+    precoAntes: 0.0,
+    preco: 569.0,
+    desconto: 0,
+    disponivel: true,
+    descricao: "Mesa compacta perfeita para quartos e ambientes menores, trazendo praticidade e conforto para estudar, trabalhar ou organizar seus materiais.",
+    imagem: `${import.meta.env.BASE_URL}fotos/9524.png`,
+  },
+  {
+    id: 9525,
+    nome: "Mesa",
+    precoAntes: 0.0,
+    preco: 569.0,
+    desconto: 0,
+    disponivel: true,
+    descricao: "Mesa com design moderno e ótimo espaço de uso, ideal para quem precisa de um ambiente organizado para aulas, leituras e tarefas diárias.",
+    imagem: `${import.meta.env.BASE_URL}fotos/9525.png`,
+  },
+  {
+    id: 9518,
+    nome: "Mesa com Gaveteiro",
+    precoAntes: 0.0,
+    preco: 571.0,
+    desconto: 0,
+    disponivel: true,
+    descricao: "Mesa com 2 gavetas e chave, perfeita para guardar materiais, documentos e itens pessoais com mais segurança, mantendo seu espaço de estudos sempre organizado e funcional.",
+    imagem: `${import.meta.env.BASE_URL}fotos/9532.png`,
+  },
+  {
+    id: 9523,
+    nome: "Gaveteiro Móvel com Rodinha e Chave",
+    precoAntes: 0.0,
+    preco: 571.0,
+    desconto: 0,
+    disponivel: true,
+    descricao: "Gaveteiro com 3 gavetas, rodinhas para fácil movimentação e chave para mais segurança. Ideal para manter materiais e objetos do dia a dia sempre organizados no seu espaço de estudos.",
+    imagem: `${import.meta.env.BASE_URL}fotos/9523.png`,
   },
 ];
 

@@ -59,9 +59,6 @@ button {
   width: 88px;
   height: 88px;
   object-fit: contain;
-  background: none;
-  padding: 0;
-  border-radius: 0;
 }
 
 .header__title {
@@ -162,11 +159,24 @@ button {
 .card-produto__img {
   width: 100%;
   height: 220px;
-  object-fit: cover;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 12px;
 }
 
 .card-produto__body {
   padding: 16px;
+}
+
+.card-produto__discount {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px 8px;
+  background: var(--terracota);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
 .card-produto__title {
@@ -182,11 +192,34 @@ button {
   line-height: 1.5;
 }
 
+.card-produto__old-price {
+  margin: 0 0 4px;
+  color: #888;
+  text-decoration: line-through;
+}
+
 .card-produto__price {
-  margin: 0 0 16px;
+  margin: 0 0 10px;
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--verde);
+}
+
+.card-produto__status {
+  margin: 0 0 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--verde);
+}
+
+.card-produto__obs-btn {
+  margin-bottom: 12px;
+  background: none;
+  border: none;
+  color: var(--verde);
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
 }
 
 /* RESUMO */
@@ -282,6 +315,11 @@ button {
   justify-content: center;
 }
 
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .header__brand {
@@ -304,17 +342,5 @@ button {
   .resumo__item {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .header__arch {
-    width: 90px;
-    height: 110px;
-    right: 16px;
-  }
-
-  .hero__arch {
-    width: 80px;
-    height: 100px;
-    left: 16px;
   }
 }

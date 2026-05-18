@@ -12,10 +12,23 @@ function CardProduto({ produto, adicionar }) {
       />
 
       <div className="card-produto__body">
+        {produto.desconto > 0 && (
+          <span className="card-produto__discount">
+            {produto.desconto}% OFF
+          </span>
+        )}
+
+
         <h3 className="card-produto__title">{produto.nome}</h3>
 
+        {produto.precoAntes > 0 && (
+          <p className="card-produto__old-price">
+            De R$ {produto.precoAntes.toFixed(2)}
+          </p>
+        )}
+
         <p className="card-produto__price">
-          R$ {produto.preco.toFixed(2)}
+          Por R$ {produto.preco.toFixed(2)}
         </p>
 
         <button
@@ -34,8 +47,9 @@ function CardProduto({ produto, adicionar }) {
         <button
           className="btn btn--secondary"
           onClick={() => adicionar(produto)}
+          disabled={!produto.disponivel}
         >
-          Adicionar
+          {produto.disponivel ? "Adicionar" : "Indisponível"}
         </button>
       </div>
     </article>

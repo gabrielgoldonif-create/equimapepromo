@@ -20,7 +20,10 @@ function Resumo({ carrinho, adicionar, remover, enviarWhatsApp }) {
           {carrinho.map((item) => (
             <div className="resumo__item" key={item.id}>
               <div>
+  <p className="resumo__codigo">Ref: {item.id}</p>
+
   <strong>{item.nome}</strong>
+
   <p>
     R$ {item.preco.toFixed(2)} cada · Subtotal: R${" "}
     {(item.preco * item.quantidade).toFixed(2)}

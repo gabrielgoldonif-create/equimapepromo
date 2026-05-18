@@ -41,7 +41,7 @@ const produtos = [
   },
   {
     id: 9519,
-    nome: "Mesa 1,50 M ",
+    nome: "Mesa 1,50 m",
     precoAntes: 0.0,
     preco: 569.0,
     desconto: 0,
@@ -51,7 +51,7 @@ const produtos = [
   },
   {
     id: 9524,
-    nome: "Mesa",
+    nome: "Mesa 1,50 m",
     precoAntes: 0.0,
     preco: 569.0,
     desconto: 0,
@@ -61,7 +61,7 @@ const produtos = [
   },
   {
     id: 9525,
-    nome: "Mesa",
+    nome: "Mesa 1,50 m",
     precoAntes: 0.0,
     preco: 569.0,
     desconto: 0,
@@ -71,7 +71,7 @@ const produtos = [
   },
   {
     id: 9518,
-    nome: "Mesa com Gaveteiro",
+    nome: "Mesa 1,20 m com Gaveteiro",
     precoAntes: 0.0,
     preco: 571.0,
     desconto: 0,
